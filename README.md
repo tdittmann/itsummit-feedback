@@ -1,3 +1,3 @@
 # IT Summit Feedback
 
-Angular project 
+Angular project for evaluating the feedback of IT Summit.

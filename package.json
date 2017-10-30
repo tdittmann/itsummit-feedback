@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href 'https://tdittmann.github.io/itsummit-feedback/' --aot",
     "postbuild": "npm run extract-i18n",
     "test": "ng test",
     "lint": "ng lint",
