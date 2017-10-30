@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+main {
+  margin-top: 5rem;
+}
+
+$primary: #800080;
+
+/* Angular Star Rating */
+$color-negative-rating: $primary !default;
+$color-ok-rating: $primary !default;
+$color-positive-rating: $primary !default;
+$color-default-rating: $primary !default;
+
+@import '~angular-star-rating/assets/scss/star-rating';
+@import '~@krass/k-bootstrap/dist/css/k-bootstrap.css';
+@import 'components/speechBubble/speechBubble.component.scss';
+@import 'components/star/star.component.scss';
+@import 'components/feedbackCard/feedbackCard.component';

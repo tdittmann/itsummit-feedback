@@ -1,0 +1,26 @@
+<ng-template [ngIf]="feedback">
+
+  <h1>Bewertung der Konferenz</h1>
+
+  <div style="width: 20%; float: left"><b>Anzahl Feedbacks</b></div>
+  <div style="width: 80%; float: left">{{ feedback.length }}</div>
+
+  <k-star label="Catering" [stars]="starsCatering"></k-star>
+  <k-star label="Organisation" [stars]="starsOrganisation"></k-star>
+
+  <h1>Bewertung der einzelnen Sessions</h1>
+  <div *ngFor="let sessionFeedback of sessionEvaluations">
+    <feedback-card [stars]="sessionFeedback.stars / sessionFeedback.numberOfFeedback"
+                   [speakers]="sessionFeedback.session.speaker"
+                   [numFeedbacks]="sessionFeedback.numberOfFeedback"
+                   [title]="sessionFeedback.session.title">
+    </feedback-card>
+  </div>
+  <div style="clear:both;"></div>
+
+  <h1>Kommentare</h1>
+  <div *ngFor="let comment of comments">
+    <speech-bubble [quote]="comment"></speech-bubble>
+  </div>
+
+</ng-template>

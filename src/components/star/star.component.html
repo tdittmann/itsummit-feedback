@@ -1,0 +1,18 @@
+<div>
+  <div class="star-label-container">
+    <span *ngIf="label" class="star-label">{{ label }}</span>
+  </div>
+
+  <div class="star-rating-container">
+    <star-rating-comp [starType]="'svg'"
+                      [step]="0.1"
+                      [rating]="stars"
+                      [labelText]="stars | number: '1.2-2'"
+                      [labelPosition]="'right'"
+                      [showHalfStars]="true"
+                      [readOnly]="true">
+    </star-rating-comp>
+  </div>
+
+  <div style="clear: both"></div>
+</div>

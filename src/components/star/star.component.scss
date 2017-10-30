@@ -1,0 +1,23 @@
+k-star {
+
+  .star-label-container {
+    width: 20%;
+    float: left;
+  }
+
+  .star-label {
+    font-weight: bold;
+  }
+
+  .star-rating-container {
+    width: 80%;
+    float: left;
+    text-align: left;
+  }
+
+  .rating {
+    -webkit-box-pack: start;
+    display: -webkit-box;
+  }
+
+}
